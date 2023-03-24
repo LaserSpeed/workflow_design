@@ -25,7 +25,7 @@ class Workflow
 
     // It gives the list of all the information for all the workflow and related steps for
     // each workflow
-    function loads()
+    public function loads()
     {
         try {
             $sql = "SELECT w.workflow_id, w.workflow_name, w.workflow_description, w.created_at, s.step_id, s.step_name, s.step_order, s.step_type, s.step_handleby FROM " . $this->workflow_table . " w LEFT JOIN " . $this->step_table . " s ON w.workflow_id = s.workflow_id ORDER BY w.workflow_id, s.step_order";
