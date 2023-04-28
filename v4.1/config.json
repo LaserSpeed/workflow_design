@@ -1,0 +1,8 @@
+{
+    "server"            :   "localhost",
+    "password"          :   "",
+    "username"          :   "root",
+    "dbname"            :   "workflow_management",
+    "workflow_table"    :   "workflow",
+    "step_table"        :   "workflow_step"
+}
